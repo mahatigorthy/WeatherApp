@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#091D3E"
+    android:outlineAmbientShadowColor="#080F3C"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:shadowColor="#70768F"
+        android:text="get information"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCoordinates"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="enter zip code"
+        android:textColor="#F8F1F1"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewONE"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:outlineSpotShadowColor="#041130"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewHourOne"
+        app:srcCompat="@drawable/weathertemp" />
+
+    <ImageView
+        android:id="@+id/imageViewTWO"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:outlineSpotShadowColor="#041130"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewONE"
+        app:layout_constraintStart_toStartOf="@+id/imageViewONE"
+        app:layout_constraintTop_toBottomOf="@id/imageViewONE"
+        app:layout_constraintTop_toTopOf="@id/textViewHourTwo"
+        app:srcCompat="@drawable/weathertemp" />
+
+    <ImageView
+        android:id="@+id/imageViewTHREE"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:outlineSpotShadowColor="#041130"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewTWO"
+        app:layout_constraintStart_toStartOf="@+id/imageViewTWO"
+        app:layout_constraintTop_toBottomOf="@id/imageViewTWO"
+        app:layout_constraintTop_toTopOf="@id/textViewHourThree"
+        app:srcCompat="@drawable/weathertemp" />
+
+    <ImageView
+        android:id="@+id/imageViewFOUR"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:outlineSpotShadowColor="#041130"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewTHREE"
+        app:layout_constraintStart_toStartOf="@+id/imageViewTHREE"
+        app:layout_constraintTop_toBottomOf="@id/imageViewTHREE"
+        app:layout_constraintTop_toTopOf="@id/textViewHourFour"
+        app:srcCompat="@drawable/weathertemp" />
+
+    <TextView
+        android:id="@+id/textViewCoordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Coordinates"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textViewHourOne"
+        app:layout_constraintEnd_toEndOf="@+id/button1"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/button1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <TextView
+        android:id="@+id/textViewHourOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Hour One"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHourTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Hour Two"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHourOne"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="@+id/textViewHourOne"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHourOne" />
+
+    <TextView
+        android:id="@+id/textViewHourThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Hour Three"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHourTwo"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="@+id/textViewHourTwo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHourTwo" />
+
+    <TextView
+        android:id="@+id/textViewHourFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Hour Four"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/textViewHourThree"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="@+id/textViewHourThree"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHourThree" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
